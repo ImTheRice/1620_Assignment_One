@@ -8,3 +8,31 @@ body {
     background-color: #26233a;
     background-color: #e0def4;
 }
+
+.topBar {
+    display: flex;
+    justify-content: right;
+    padding-right: 5%;
+    padding-top: 2.5%;
+}
+
+nav ul {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+    font-family: roboto;
+}
+
+a:any-link {
+    color: #31748f;
+}
+
+a:visited {
+    color: #26233a;
+}
+
+a:hover {
+    color: #c4a7e7;
+}
