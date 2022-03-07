@@ -17,12 +17,19 @@ body {
 }
 
 nav ul {
-    height: inherit;
-    display: flex;
-    align-items: center;
     gap: 2rem;
     list-style-type: none;
     font-family: roboto;
+}
+
+.bottomBar {
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.footer {
+    margin-top: auto;
 }
 
 a:any-link {
@@ -35,4 +42,6 @@ a:visited {
 
 a:hover {
     color: #c4a7e7;
+    outline: #26233a;
+    text-decoration-line: none;
 }
