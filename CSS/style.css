@@ -11,11 +11,6 @@ button {
     text-align: center;
 }
 
-section {
-    display: flex;
-    flex-direction: row;
-}
-
 .sidebar {
     display: flex;
     justify-content: center;
@@ -46,13 +41,23 @@ nav ul {
     background-color: #26233a;
 }
 
-.topButton {
+.topLink {
     background-color: #f6c177;
     font-size: 1rem;
     border-radius: 25px;
     padding: 0.875%;
     padding-left: 2.5%;
     padding-right: 2.5%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.mini {
+    flex-direction: row;
+    justify-content: center;
 }
 
 .bottomBar {
