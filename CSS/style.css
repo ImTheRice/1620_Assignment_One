@@ -3,17 +3,11 @@ body {
     margin: 0;
 }
 
-button,
-footer {
-    font-size: 1rem;
-    font-family: roboto;
-}
-
 .topBar {
     display: flex;
     justify-content: right;
-    padding: 2.5%;
     background-color: #26233a;
+    padding: 2.5%;
     gap: 2rem;
     list-style: none;
 }
@@ -27,40 +21,114 @@ footer {
     font-family: roboto;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.sideMenuExpanded {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    background-color: #f6c177;
+    border-radius: 0px 15px 15px 0px;
+    width: 250px;
+    height: 500px;
+}
+
 .centerWrap {
-    width: 100%;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .popIN {
     font-size: 2rem;
-    border-radius: 0px 15px 15px 0px;
     background-color: #26233a;
     color: #f6c177;
+    border-radius: 0px 15px 15px 0px;
 }
 
 .popIN:hover {
     color: #c4a7e7;
 }
 
-.create {
-    font-size: 1.5rem;
+.popOUT {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    background-color: #26233a;
+    color: #f6c177;
+    border-radius: 0px 15px 0px 0px;
+    width: 250px;
+    height: auto;
+}
+
+.popOUT:hover {
+    color: #c4a7e7;
+}
+
+.noteList {
+    list-style-type: none;
+}
+
+.createWrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.createButton {
+    font-size: 2rem;
+    background-color: #26233a;
+    color: #f6c177;
     border-radius: 15px 15px 15px 15px;
+    margin-top: 2rem;
+}
+
+.createButton:hover {
+    color: #c4a7e7;
+}
+
+textarea {
     background-color: #26233a;
     color: #f6c177;
 }
 
-.create:hover {
+.innerWrap {
+    width: 100%;
+}
+
+.commandWrap {
+    display: flex;
+    justify-content: right;
+    column-gap: 2rem;
+}
+
+.commandButton {
+    font-size: 2rem;
+    background-color: #26233a;
+    color: #f6c177;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.commandButton:hover {
     color: #c4a7e7;
 }
 
 footer {
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
     position: absolute;
     bottom: 0;
+}
+
+button,
+footer,
+.noteList {
+    font-size: 1rem;
+    font-family: roboto;
 }
 
 a:any-link {
@@ -77,11 +145,21 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .centerWrap {
-        width: 100%;
+    main {
+        flex-direction: column;
     }
     .centerWrap {
-        margin-top: 2rem;
         justify-content: left;
+    }
+    .popOUT {
+        width: 100%;
+        border-radius: 0%;
+        height: 60px;
+    }
+    .sideMenuExpanded {
+        width: 100%;
+        border-radius: 0%;
+        height: auto;
+        border-bottom: 0.5rem solid #26233a;
     }
 }
