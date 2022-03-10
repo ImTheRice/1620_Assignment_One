@@ -22,9 +22,6 @@ button {
 
 .mainButton {
     background-color: transparent;
-    width: 150%;
-    margin-left: 75%;
-    margin-top: 50%;
     padding: 2.5%;
 }
 
@@ -43,27 +40,74 @@ nav ul {
 
 .topLink {
     background-color: #f6c177;
-    font-size: 1rem;
     border-radius: 25px;
-    padding: 0.875%;
+    padding-top: 0.875%;
+    padding-bottom: 0.875%;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
 
-section {
+.screen {
     display: flex;
-    flex-direction: row;
+    height: 100rem;
+    width: 100%;
 }
 
-.mini {
-    flex-direction: row;
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100rem;
+    width: 100%;
+}
+
+.seperator {
+    display: flex;
+    height: 100rem;
+    width: 15%;
+}
+
+#menuButtons {
+    padding-top: 2.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#collapse {
+    display: flex;
+    justify-content: right;
+    padding-right: 2.5%;
+}
+
+#noteList {
+    display: flex;
+    justify-content: left;
+    padding-top: 25%;
+}
+
+#rowOne {
+    width: 100%;
+    background-color: #31748f;
+}
+
+#rowTwo {
+    display: flex;
     justify-content: center;
+    height: 20rem;
+    margin-top: 5rem;
+}
+
+#rowThree {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    margin-top: 5rem;
 }
 
 .bottomBar {
     display: flex;
     justify-content: center;
-    min-height: 90vh;
+    background-color: #f6c177;
 }
 
 .footer {
@@ -84,12 +128,8 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-    section {
-        flex-direction: column;
-    }
-    .mainButton {
-        margin-left: 0%;
-        margin-top: 5%;
-        width: auto;
+    .screen {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
