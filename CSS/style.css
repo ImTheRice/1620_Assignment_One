@@ -90,6 +90,10 @@ main {
     color: #c4a7e7;
 }
 
+label {
+    display: -moz-box;
+}
+
 textarea {
     background-color: #26233a;
     color: #f6c177;
@@ -119,6 +123,7 @@ textarea {
 footer {
     display: flex;
     justify-content: center;
+    background-color: #f6c177;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -129,10 +134,12 @@ footer,
 .noteList {
     font-size: 1rem;
     font-family: roboto;
+    gap: 1rem;
 }
 
 a:any-link {
-    color: #31748f;
+    color: #26233a;
+    text-decoration-line: none;
 }
 
 a:visited {
