@@ -3,19 +3,34 @@
 }
 
 body {
-    background-color: #31748f;
-    background-color: #f6c177;
-    background-color: #26233a;
     background-color: #e0def4;
 }
 
 button {
-    background-color: #31748f;
-    color: #e0def4;
     font-size: 1rem;
     text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    background-color: #31748f;
+    color: #e0def4;
     border-radius: 0px 25px 25px 0px;
-    padding: 0.875%;
+    padding: 5%;
+}
+
+.mainButton {
+    background-color: transparent;
+    width: 150%;
+    margin-left: 75%;
+    margin-top: 50%;
+    padding: 2.5%;
 }
 
 nav ul {
@@ -24,22 +39,20 @@ nav ul {
     font-family: roboto;
 }
 
-header nav ul li {
+.topBar {
+    display: flex;
+    justify-content: right;
+    padding: 2.5%;
+    background-color: #26233a;
+}
+
+.topButton {
     background-color: #f6c177;
     font-size: 1rem;
     border-radius: 25px;
     padding: 0.875%;
     padding-left: 2.5%;
     padding-right: 2.5%;
-}
-
-.topBar {
-    display: flex;
-    justify-content: right;
-    padding-right: 5%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    background-color: #26233a;
 }
 
 .bottomBar {
@@ -63,4 +76,15 @@ a:visited {
 a:hover {
     color: #c4a7e7;
     text-decoration-line: none;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+    .mainButton {
+        margin-left: 0%;
+        margin-top: 5%;
+        width: auto;
+    }
 }
